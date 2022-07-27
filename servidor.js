@@ -22,6 +22,7 @@ import loginRouter from "./src/routes/login.js"
 import logoutRouter from "./src/routes/logout.js"
 import registroRouter from "./src/routes/registro.js"
 import infoRoutes from "./src/routes/info.js"
+import getRandom from "./src/routes/apiRandom.js"
 import 'dotenv/config'
 import passport from 'passport';
 
@@ -67,6 +68,7 @@ app.use('/registro',registroRouter)
 app.use('/login',loginRouter)
 app.use('/logout',logoutRouter)
 app.use('/info',infoRoutes)
+app.use('/api/random',getRandom)
 //app.use(passport.initialize())
 //app.use(passport.session())
 app.set('views','./src/views')
