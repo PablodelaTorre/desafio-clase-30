@@ -105,7 +105,12 @@ io.on('connection',(socket)=>{
     })
 })
 
-//const PORT = 8080
+// const PORT = parseInt(process.argv[2]) || 8080
+// app.listen(PORT, () => {
+//     console.log(`Server on port ${PORT}`)
+// })
+
+
 const server = httpServer.listen(process.env.PORT, () => {
     console.log(`servidor escuchando en el puerto ${process.env.PORT}`)
 })
