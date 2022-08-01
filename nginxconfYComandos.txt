@@ -30,4 +30,4 @@ Para listar procesos con forever : "forever list"
 comandos pm2: 
 Para listar procesos: pm2 list
 pm2 start server.js --name="servidor1" --watch -- 8081
-pm2 start server.js --name="servidor2" --watch -- 8082 -i max
+pm2 start server.js --name="servidor2" --watch -- 8082 -i 4
