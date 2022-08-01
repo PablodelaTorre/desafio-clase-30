@@ -85,6 +85,8 @@ app.get('/',(req,res) => {
     }
 })
 
+// socket io
+
 export const productos = []
 
 export const mensajes = []
@@ -110,7 +112,7 @@ io.on('connection',(socket)=>{
 //     console.log(`Server on port ${PORT}`)
 // })
 
-
-const server = httpServer.listen(process.env.PORT, () => {
+const PORT = parseInt(process.argv[2]) || 8080
+    const server = httpServer.listen(process.env.PORT, () => {
     console.log(`servidor escuchando en el puerto ${process.env.PORT}`)
 })
